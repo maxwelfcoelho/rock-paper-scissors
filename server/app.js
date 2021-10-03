@@ -9,7 +9,7 @@ app.get('/random-hand', (req, res) => {
     const hands = ['pedra', 'papel', 'tesoura'];
     const randomHand = hands[Math.floor(Math.random() * hands.length)];
 
-    res.send(randomHand);
+    res.json(randomHand);
 });
 
 const port = 4000;
