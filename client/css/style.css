@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+}
+
+.hands {
+    border: 1px solid #DDD;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.hands .hand {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.hands .icon {
+    font-size: 2em;
+    cursor: pointer;
+    color: #000;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+.hands .hand:checked + .icon {
+    outline: 2px solid red;
+}
