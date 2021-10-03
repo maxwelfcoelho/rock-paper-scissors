@@ -10,20 +10,37 @@
 </head>
 <body>
     <div class="game">
-        <div class="hands">
-            <div>
-                <input class="hand" id="rock" type="radio" name="hand" value="pedra">
-                <label class="icon" for="rock"><i class="fas fa-hand-rock"></i></label>
+
+        <div class="sides">
+            <div class="player-side">
+                <div class="player-hand">
+                    <i class="big-icon-user fas fa-hand-rock"></i>
+                </div>
+
+                <div class="hands">
+                    <div>
+                        <input class="hand" id="rock" type="radio" name="hand" value="pedra">
+                        <label class="icon" for="rock"><i class="fas fa-hand-rock"></i></label>
+                    </div>
+                    <div>
+                        <input class="hand" id="paper" type="radio" name="hand" value="papel">
+                        <label class="icon" for="paper"><i class="fas fa-hand-paper"></i></label>
+                    </div>
+                    <div>
+                        <input class="hand" id="scissors" type="radio" name="hand" value="tesoura">
+                        <label class="icon" for="scissors"><i class="fas fa-hand-scissors"></i></label>
+                    </div>
+                </div>
             </div>
-            <div>
-                <input class="hand" id="paper" type="radio" name="hand" value="papel">
-                <label class="icon" for="paper"><i class="fas fa-hand-paper"></i></label>
+
+            <div class="computer-side">
+                <div class="computer-hand">
+                    <i class="big-icon-computer fas fa-hand-paper"></i>
+                </div>
             </div>
-            <div>
-                <input class="hand" id="scissors" type="radio" name="hand" value="tesoura">
-                <label class="icon" for="scissors"><i class="fas fa-hand-scissors"></i></label>
-            </div>
-        </div>
+
+         </div>
+
         <button id="play">Jogar</button>
     </div>
 
